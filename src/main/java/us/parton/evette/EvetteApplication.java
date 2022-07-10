@@ -3,7 +3,7 @@ package us.parton.evette;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import us.parton.evette.dtos.AutomobileDTO;
-import us.parton.evette.recordsets.AutomobileRecord;
+import us.parton.evette.records.AutomobileRecord;
 
 @SpringBootApplication
 public class EvetteApplication {
