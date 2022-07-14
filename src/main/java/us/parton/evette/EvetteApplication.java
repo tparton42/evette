@@ -41,7 +41,7 @@ public class EvetteApplication {
     private static HashMap<String, AutomobileDTO> getNissanModels() {
         HashMap<String, AutomobileDTO> nissanModels = new HashMap<>();
         nissanModels.put("Leaf", new AutomobileDTO(Brand.NISSAN, "SL", 2010, Colors.OCEAN_BLUE) );
-        nissanModels.put("Ariya", new AutomobileDTO(Brand.NISSAN, "Platinum+", 0223, Colors.PASSION_RED_BM) );
+        nissanModels.put("Ariya", new AutomobileDTO(Brand.NISSAN, "Platinum+", 2023, Colors.PASSION_RED_BM) );
 
         return nissanModels;
     }
