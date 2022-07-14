@@ -1,9 +1,8 @@
 package us.parton.evette.dtos;
 
+import com.fasterxml.jackson.databind.ObjectMapper;
 import us.parton.evette.enums.Brand;
 import us.parton.evette.enums.Colors;
-
-import java.util.UUID;
 
 public class AutomobileDTO {
 
@@ -58,4 +57,18 @@ public class AutomobileDTO {
         this.color = color;
     }
 
+    @Override
+    public String toString() {
+        ObjectMapper objectMapper = new ObjectMapper();
+        objectMapper.writerWithDefaultPrettyPrinter();
+        String strOut = "{}";
+
+        try {
+            strOut = objectMapper.writeValueAsString(this);
+        } catch (Exception ex) {
+            System.out.println("Unable to convert _this_ to JSON via ObjectMapper.");
+        }
+
+        return strOut;
+    }
 }
